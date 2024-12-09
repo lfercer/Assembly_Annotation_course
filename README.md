@@ -3,3 +3,4 @@ This project is part of the courses "Genome and Transcriptome Assembly" and "Org
 
 ## Scripts
 Only the scripts are published in this GitHub repository, you can check my personal directory on the cluster (/data/users/lfernandez/assembly_course) for futher interest in the outputs obtained.
+[scripts/01_run_fastqc.sh](01_run_fastqc.sh) 
