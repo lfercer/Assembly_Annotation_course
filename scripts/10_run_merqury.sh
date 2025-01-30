@@ -21,13 +21,13 @@ mkdir -p $OUT_DIR
 export MERQURY="/usr/local/share/merqury"
 
 #Get right k size
-#apptainer exec --bind $WORK_DIR $CONTAINER_DIR/merqury_1.3.sif \
-#sh $MERQURY/best_k.sh 164000000 
+apptainer exec --bind $WORK_DIR $CONTAINER_DIR/merqury_1.3.sif \
+sh $MERQURY/best_k.sh 164000000 
 
 #result: tolerable collision rate: 0.001, k=18.6267
 #Build meryl 
-#apptainer exec --bind $WORK_DIR $CONTAINER_DIR/merqury_1.3.sif \
-#meryl k=18 count $GENOME_FILE output $OUT_DIR/genome.meryl
+apptainer exec --bind $WORK_DIR $CONTAINER_DIR/merqury_1.3.sif \
+meryl k=18 count $GENOME_FILE output $OUT_DIR/genome.meryl
 
 cd $OUT_DIR
 #For fly assembly
